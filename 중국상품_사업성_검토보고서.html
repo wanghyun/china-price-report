@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>중국 상품 국내 유통 사업성 검토 보고</title>
+  <style>
+    :root {
+      --primary: #1946b9;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --sub: #667085;
+      --line: #d0d7e2;
+      --good: #0f9d58;
+      --warn: #f59e0b;
+      --bad: #dc2626;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Pretendard, Apple SD Gothic Neo, Malgun Gothic, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 28px 18px 60px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #1946b9 0%, #163b97 100%);
+      color: #fff;
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 16px 40px rgba(25, 70, 185, 0.18);
+    }
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 30px;
+      line-height: 1.3;
+    }
+    .hero p { margin: 0; color: rgba(255,255,255,0.88); }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .meta .item {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 16px;
+      padding: 14px;
+    }
+    .meta .label {
+      font-size: 13px;
+      opacity: 0.8;
+      margin-bottom: 6px;
+    }
+    .meta .value {
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 18px;
+      margin-top: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+    .card h2 { margin: 0 0 14px; font-size: 20px; }
+    .card ul { margin: 0; padding-left: 20px; }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .pill {
+      padding: 9px 12px; border-radius: 999px; font-weight: 700; font-size: 13px;
+      border: 1px solid transparent;
+    }
+    .pill.good { background: rgba(15,157,88,0.1); color: var(--good); border-color: rgba(15,157,88,0.2); }
+    .pill.warn { background: rgba(245,158,11,0.1); color: var(--warn); border-color: rgba(245,158,11,0.2); }
+    .pill.bad { background: rgba(220,38,38,0.1); color: var(--bad); border-color: rgba(220,38,38,0.2); }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .summary .box {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      background: #fafcff;
+    }
+    .summary .box strong { display: block; font-size: 18px; margin-bottom: 4px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      overflow: hidden;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      font-size: 14px;
+      vertical-align: top;
+    }
+    th { background: #f8fbff; font-weight: 800; }
+    .note {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: #f8fbff;
+      border: 1px solid #d9e5ff;
+      color: #334155;
+      font-size: 14px;
+    }
+    .footer { margin-top: 18px; font-size: 13px; color: var(--sub); }
+    .download {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 16px;
+      background: #1946b9;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+    @media (max-width: 860px) {
+      .meta, .grid, .summary { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>중국 상품 국내 유통 사업성 검토 통합 보고</h1>
+      <p>1차 선별 30개 품목 기준 분석 결과 및 공급원가 배수(2.4 → 목표 배수) 역산 요약</p>
+      <div class="meta">
+        <div class="item"><div class="label">검토 대상</div><div class="value">약 100개 중 30개</div></div>
+        <div class="item"><div class="label">현재 기준 배수</div><div class="value">중국단가 × 2.4</div></div>
+        <div class="item"><div class="label">핵심 판단</div><div class="value">현재는 사업성 부족</div></div>
+        <div class="item"><div class="label">핵심 과제</div><div class="value">배수 절감 / 단가 인하</div></div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>1. 1차 분석 결과</h2>
+        <ul>
+          <li>총 약 100개 상품 중 30개 품목을 1차 선별하여 분석했습니다.</li>
+          <li>A사 기준 중국단가에 공급원가 배수 2.4를 적용해 국내 판매가와 비교했습니다.</li>
+          <li>대부분 품목이 목표 이익률 30% 기준에 미달했습니다.</li>
+          <li>20% 기준에서도 일부 품목만 제한적으로 가능할 것으로 판단됩니다.</li>
+          <li>수수료, 배송비, 부가세 반영 시 실질 수익 확보가 어려운 구조입니다.</li>
+        </ul>
+        <div class="summary">
+          <div class="box"><strong>30% 기준</strong>대부분 미달</div>
+          <div class="box"><strong>20% 기준</strong>일부만 조건부 가능</div>
+          <div class="box"><strong>현 배수 2.4</strong>수익 구조 확보 어려움</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>2. 핵심 결론</h2>
+        <p>본 사업은 판매 전략보다 <strong>A사 공급단가 경쟁력</strong>에 의해 성패가 결정되는 구조입니다.</p>
+        <div class="pill-row">
+          <span class="pill bad">현재 2.4는 사업성 부족</span>
+          <span class="pill warn">2.0~2.1은 조건부 검토</span>
+          <span class="pill good">1.6~1.9는 진행 가능 구간</span>
+        </div>
+        <div class="note">
+          현재 단가 기준으로는 국내 판매 경쟁력 및 의미 있는 수익성 확보가 어렵습니다. 따라서 우선 검토 포인트는 유통 전략이 아니라, 공급원가 배수를 얼마나 낮출 수 있는지와 A사 공급단가 인하 가능 여부입니다.
+        </div>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top: 18px;">
+      <h2>3. 공급원가 배수 역산 분석</h2>
+      <table>
+        <thead>
+          <tr><th>구분</th><th>필요 배수</th><th>의미</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>현재 기준</td><td><strong>2.4</strong></td><td>대부분 품목 수익성 미달 / 일부 적자 또는 저수익 구조</td></tr>
+          <tr><td>목표 이익률 30%</td><td><strong>1.6 ~ 1.9</strong></td><td>현재 대비 약 20~35% 원가 절감 필요</td></tr>
+          <tr><td>목표 이익률 20%</td><td><strong>1.9 ~ 2.1</strong></td><td>현재 대비 약 10~20% 원가 절감 필요</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>4. 종합 해석</h2>
+        <ul>
+          <li><strong>2.2 이상</strong>: 수익 구조 확보 제한적</li>
+          <li><strong>2.0 ~ 2.1</strong>: 20% 기준 조건부 검토 구간</li>
+          <li><strong>1.6 ~ 1.9</strong>: 30% 기준 진행 가능 구간</li>
+          <li><strong>1.8 전후</strong>: 상대적으로 안정적 수익 구조 가능</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>5. 검토 필요 사항</h2>
+        <ul>
+          <li>공급원가 배수(현재 2.4)의 절감 가능 여부</li>
+          <li>A사 공급단가 인하 가능 범위 및 조건 확인</li>
+          <li>품목별 목표 배수 충족 가능성 추가 점검</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top: 18px;">
+      <h2>6. 최종 판단 기준</h2>
+      <table>
+        <thead>
+          <tr><th>배수 구간</th><th>판단</th><th>설명</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1.6 ~ 1.9</td><td><strong style="color:#0f9d58;">진행 가능</strong></td><td>목표 이익률 30% 기준 충족 가능 구간</td></tr>
+          <tr><td>1.9 ~ 2.1</td><td><strong style="color:#f59e0b;">조건부 진행</strong></td><td>목표 이익률 20% 기준 검토 가능 구간</td></tr>
+          <tr><td>2.2 이상</td><td><strong style="color:#dc2626;">진행 비추천</strong></td><td>사업성 부족 가능성 높음</td></tr>
+        </tbody>
+      </table>
+      <div class="note">
+        요약: 현재 2.4는 불가, 최소 2.1 이하 진입이 필요하며, 안정권은 1.8 수준으로 판단됩니다.
+      </div>
+      <a class="download" href="./단가계산_30품목_묶음판매_비교_자동판정완성본.xlsx">엑셀 파일 다운로드</a>
+      <div class="footer">※ 본 분석은 실무 기준 추정값이며 실제 조건에 따라 변동 가능</div>
+    </section>
+  </div>
+</body>
+</html>
